@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head><title>Flask Render</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Colorful Flask Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
 <body>
-<h1>Chào bạn từ Flask Render!</h1>
+    <div class="container">
+        <h1>Welcome to My Colorful Flask Web!</h1>
+        <p>This is a simple dynamic web page using Flask, HTML, and CSS.</p>
+    </div>
 </body>
 </html>
+
