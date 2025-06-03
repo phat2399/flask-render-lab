@@ -2,14 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Colorful Flask Page</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Colorful Flask Web</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 80px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 10% auto;
+            width: 60%;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My Colorful Flask Web!</h1>
-        <p>This is a simple dynamic web page using Flask, HTML, and CSS.</p>
+        <h1>Hello from Flask 🌈</h1>
+        <p>This is a dynamic web page styled directly inside the HTML file.</p>
+        <a class="btn" href="/">Click me</a>
     </div>
 </body>
 </html>
+
 
